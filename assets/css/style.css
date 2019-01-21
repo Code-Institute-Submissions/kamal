@@ -11,8 +11,12 @@ body {
 .text-container{
     background-color: transparent;
     color: #F0EFF4;
-   
 }
+
+.footer-container{
+    background-color: #338C27;
+}
+
 
 
 /*Images*/
@@ -20,5 +24,31 @@ body {
 .img-item{
     margin-bottom: 50px ;
     border:solid #F0EFF4;
+
+/*Footer*/    
+}
+
+.footer-items li a i {
+    width: 60px;
+    height: 60px;
+    padding: 25px 0;
+    border-radius: 40%;
+    font-size: 40px;
+    line-height: 7px;
+    text-align: center;
+    color: #DE363D;
+    background: #F0EFF4;
+    transition: all 0.65s ease-in-out;
+    -moz-transition: all 0.65s ease-in-out;
+    -webkit-transition: all 0.65s ease-in-out;
+    -o-transition: all 0.65s ease-in-out;
+}
+
+.footer-items li a i:hover {
+    
+    border-radius: 100%;
+    color:#B41C23;
     
 }
+
+
