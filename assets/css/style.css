@@ -1,0 +1,24 @@
+body {
+    font-family: 'Amatic SC', cursive;
+}
+
+/*Containers*/
+
+.content-container{
+    background-color: #338C27;
+}
+
+.text-container{
+    background-color: transparent;
+    color: #F0EFF4;
+   
+}
+
+
+/*Images*/
+
+.img-item{
+    margin-bottom: 50px ;
+    border:solid #F0EFF4;
+    
+}
