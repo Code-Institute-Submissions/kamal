@@ -4,16 +4,17 @@ body {
 
 /*Containers*/
 
-.content-container{
+.content-container {
     background-color: #338C27;
 }
 
-.text-container{
+.text-container {
     background-color: transparent;
     color: #F0EFF4;
+    height: 75vh;
 }
 
-.footer-container{
+.footer-container {
     background-color: #338C27;
 }
 
@@ -21,11 +22,11 @@ body {
 
 /*Images*/
 
-.img-item{
-    margin-bottom: 50px ;
-    border:solid #F0EFF4;
+.img-item {
+    margin-bottom: 50px;
+    border: solid #F0EFF4;
 
-/*Footer*/    
+    /*Footer*/
 }
 
 .footer-items li a i {
@@ -45,10 +46,96 @@ body {
 }
 
 .footer-items li a i:hover {
-    
+
     border-radius: 100%;
-    color:#B41C23;
-    
+    color: #B41C23;
+
+}
+
+/*Header*/
+
+.navbar {
+
+    margin-bottom: 0;
+    border-color: #338C27;
+    background-color: #338C27;
+    border-radius: 0px;
+    height: 25vh;
+    padding-left: 30px;
+   
+
+
+}
+
+.navbar-default .navbar-collapse .collapsed {
+    border-color: transparent;
+    background-color: transparent;
+
 }
 
 
+.navbar-default .navbar-toggle {
+    border: 0;
+    border-color: transparent;
+
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F0EFF4;
+}
+
+
+
+.navbar-brand {
+    height: 150px;
+    padding: 15px 60px;
+}
+
+.navbar-nav li a {
+    color: #F0EFF4 !important;
+    font-size: x-large;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .collapsing {
+        position: absolute !important;
+        z-index: 20;
+        top: 5px;
+
+
+    }
+    .collapse.in {
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top: 5px;
+
+
+    }
+
+    .navbar-brand>img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-left: -60px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 25vh;
+    }
+    .text-container {
+        height: 75vh;
+    }
+}
