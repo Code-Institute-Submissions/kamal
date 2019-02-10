@@ -1,22 +1,19 @@
 body {
     font-family: 'Amatic SC', cursive;
+    background-color: #FBB02D;
 }
 
 /*Containers*/
 
-.content-container {
-    background-color: #338C27;
-}
+.content-container {}
 
 .text-container {
     background-color: transparent;
-    color: #F0EFF4;
+    color: #02715A;
     height: 75vh;
 }
 
-.footer-container {
-    background-color: #338C27;
-}
+.footer-container {}
 
 
 
@@ -30,14 +27,14 @@ body {
 }
 
 .footer-items li a i {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 25px 0;
     border-radius: 40%;
-    font-size: 40px;
-    line-height: 7px;
+    font-size: 30px;
+    line-height: 1px;
     text-align: center;
-    color: #DE363D;
+    color: #C3615E;
     background: #F0EFF4;
     transition: all 0.65s ease-in-out;
     -moz-transition: all 0.65s ease-in-out;
@@ -48,7 +45,7 @@ body {
 .footer-items li a i:hover {
 
     border-radius: 100%;
-    color: #B41C23;
+    color: #A10702;
 
 }
 
@@ -57,12 +54,12 @@ body {
 .navbar {
 
     margin-bottom: 0;
-    border-color: #338C27;
-    background-color: #338C27;
+    border-color: #FBB02D;
+    background-color: #FBB02D;
     border-radius: 0px;
     height: 25vh;
     padding-left: 30px;
-   
+
 
 
 }
@@ -84,8 +81,12 @@ body {
     background-color: transparent;
 }
 
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #F0EFF4;
+    background-color: #A10702;
 }
 
 
@@ -96,10 +97,18 @@ body {
 }
 
 .navbar-nav li a {
-    color: #F0EFF4 !important;
+    color: #A10702 !important;
     font-size: x-large;
 
 }
+
+hr {
+    height: 4px;
+    border-radius: 50px;
+    background-color: #A10702;
+    border-top: 0px;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -107,6 +116,7 @@ body {
         position: absolute !important;
         z-index: 20;
         top: 5px;
+        border-style: none;
 
 
     }
@@ -115,6 +125,7 @@ body {
         position: absolute;
         z-index: 20;
         top: 5px;
+        border-style: none;
 
 
     }
