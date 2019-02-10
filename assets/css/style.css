@@ -1,5 +1,5 @@
 body {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Concert One', cursive;
     background-color: #FBB02D;
 }
 
@@ -11,6 +11,8 @@ body {
     background-color: transparent;
     color: #02715A;
     height: 75vh;
+    font-family: 'Amatic sc', cursive;
+  
 }
 
 .footer-container {}
@@ -98,7 +100,7 @@ body {
 
 .navbar-nav li a {
     color: #A10702 !important;
-    font-size: x-large;
+   font-size: medium;
 
 }
 
