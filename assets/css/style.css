@@ -1,6 +1,6 @@
 body {
     font-family: 'Amatic sc', cursive;
-    background-color: #FBB02D;
+    background-color: #fbb02dc2;
 }
 
 /*Containers*/
@@ -35,18 +35,55 @@ body {
     margin: 0 auto;
     max-width: 70%;
 
-
 }
 
 .form-item {
-    margin-top: 3px;
-    border: #F0EFF4;
-
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #A10702;
+    color: #02715A;
+    background-color: #F0EFF4;
+}
+.form-item:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #02715A;
+    color: #02715A;
 }
 
 .form-button {
     margin-top: 3px;
     color: #02715A;
+    border: 1px solid #A10702;
+    background-color: #F0EFF4;
+    font-size: 21px;
+
+}
+
+.form-button:active{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid #02715A!important;
+    color: #02715A;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
 }
 
 /*Tour*/
@@ -92,6 +129,7 @@ body {
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
+    font-size:40px;
 }
 
 .hovereffect:hover .overlay {
@@ -138,8 +176,8 @@ body {
 .navbar {
 
     margin-bottom: 0;
-    border-color: #FBB02D;
-    background-color: #FBB02D;
+    border-color: transparent;
+    background-color: transparent;
     border-radius: 0px;
     height: 25vh;
     padding-left: 30px;
@@ -204,8 +242,10 @@ hr {
     .collapsing {
         position: absolute !important;
         z-index: 20;
-        top: 5px;
+        top: 0px;
         border-style: none;
+        left: 15px;
+        background-color:rgba(240, 239, 244, 0.54);
 
 
     }
@@ -213,8 +253,10 @@ hr {
         display: block;
         position: absolute;
         z-index: 20;
-        top: 5px;
+        top: 0px;
         border-style: none;
+        left: 15px;
+        background-color:rgba(240, 239, 244, 0.54);
 
 
     }
@@ -243,11 +285,11 @@ hr {
         font-size: 35px;
         border-left: 50px;
     }
-    
+
     .td-item {
-  
-    line-height: 40px;
-    font-size: 20px;
-}
+
+        line-height: 40px;
+        font-size: 20px;
+    }
 
 }
