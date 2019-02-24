@@ -1,6 +1,6 @@
 body {
     font-family: 'Amatic sc', cursive;
-    background-color: #fbb02dc2;
+    background-color: #fbb02d;
 }
 
 /*Containers*/
@@ -15,7 +15,14 @@ body {
 
 }
 
-.footer-container {}
+.footer-container-index {
+
+    position: absolute;
+    bottom: 30px;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+}
 
 /*Youtube items*/
 
@@ -49,6 +56,7 @@ body {
     color: #02715A;
     background-color: #F0EFF4;
 }
+
 .form-item:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     padding: 3px 0px 3px 3px;
@@ -66,24 +74,38 @@ body {
 
 }
 
-.form-button:active{
+.form-button:active {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid #02715A!important;
     color: #02715A;
 }
 
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
-  opacity: 1; /* Firefox */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1;
+    /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    background-color: #062E82 !important;
+    color: #424242 !important;
+    -webkit-box-shadow: 0 0 0 1000px #fafafa inset !important;
+    -webkit-text-fill-color: #424242 !important;
 }
 
 /*Tour*/
@@ -129,7 +151,7 @@ body {
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
-    font-size:40px;
+    font-size: 40px;
 }
 
 .hovereffect:hover .overlay {
@@ -181,9 +203,15 @@ body {
     border-radius: 0px;
     height: 25vh;
     padding-left: 30px;
+    margin-right: 45px;
 
 
 
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+    padding: 10px 0px;
 }
 
 .navbar-default .navbar-collapse .collapsed {
@@ -216,18 +244,46 @@ body {
     background-color: #A10702;
 }
 
+.navbar-brand>img {
 
-
-.navbar-brand {
-    height: 150px;
-    padding: 15px 60px;
-}
+     position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-left: -40px;}
 
 .navbar-nav li a {
     color: #A10702 !important;
     font-size: 25px;
+}
+
+.collapsing {
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    border-style: none;
+    left: 15px;
+    background-color: rgba(240, 239, 244, 0.54);
+
 
 }
+
+
+
+.collapse.in {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    border-style: none;
+    left: 15px;
+    background-color: rgba(240, 239, 244, 0.54);
+}
+
+
+
 
 hr {
     height: 4px;
@@ -236,44 +292,64 @@ hr {
     border-top: 0px;
 }
 
+/*iframe*/
 
+.banner-video {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
 
-@media screen and (max-width: 768px) {
-    .collapsing {
-        position: absolute !important;
-        z-index: 20;
-        top: 0px;
-        border-style: none;
-        left: 15px;
-        background-color:rgba(240, 239, 244, 0.54);
+}
 
+iframe {
+    width: calc((100vh*16)/9);
+    height: 100vh;
+}
 
+.index-nav {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+
+}
+
+.icon-bar {
+    width: 30px;
+    height: 5px;
+
+}
+
+.icon-bar-index {
+    
+    background-color: #fbb02d!important;
+
+}
+
+/*@media*/
+
+@media (min-aspect-ratio: 16/9) {
+    iframe {
+        width: 100%;
+        height: calc((100vw*9) /16);
     }
-    .collapse.in {
-        display: block;
-        position: absolute;
-        z-index: 20;
-        top: 0px;
-        border-style: none;
-        left: 15px;
-        background-color:rgba(240, 239, 244, 0.54);
-
-
-    }
-
-    .navbar-brand>img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 120px;
-        height: 120px;
-        margin-top: -60px;
-        margin-left: -60px;
-
+    .banner-video {
+        height: 100vh;
+        overflow: hidden;
     }
 }
 
 @media screen and (min-width: 768px) {
+
+    .navbar-brand>img {
+
+
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        left: 75px;
+        margin-left: 0px;
+    }
+
     .navbar {
         height: 25vh;
     }
@@ -281,10 +357,7 @@ hr {
         height: 75vh;
     }
 
-    .navbar-nav li a {
-        font-size: 35px;
-        border-left: 50px;
-    }
+
 
     .td-item {
 
@@ -292,4 +365,10 @@ hr {
         font-size: 20px;
     }
 
-}
+    .index-nav {
+
+        background-color: rgba(251,176,45,1);
+        height: 50px;
+        width: 100%;
+       
+    }
