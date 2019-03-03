@@ -19,6 +19,9 @@ body {
 .text-container-contact {
     background-color: transparent;
     color: #02715A;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .footer-container-index {
@@ -91,6 +94,34 @@ body {
     border: 1px solid #02715A!important;
     color: #02715A;
 }
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    background-color: #062E82 !important;
+    color: #424242 !important;
+    -webkit-box-shadow: 0 0 0 1000px #fafafa inset !important;
+    -webkit-text-fill-color: #424242 !important;
+}
+
 
 /*Tour*/
 
@@ -192,6 +223,10 @@ body {
     height: 25vh;
     padding-left: 30px;
     margin-right: 45px;
+}
+
+.navbar-contact {
+    height: 20vh;
 }
 
 .navbar-toggle {
