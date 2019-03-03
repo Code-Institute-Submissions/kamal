@@ -2,6 +2,7 @@ body {
     font-family: 'Amatic sc', cursive;
     background-color: #fbb02d;
 }
+
 /*Containers*/
 .text-container {
     background-color: transparent;
@@ -216,6 +217,10 @@ body {
     left: 15px;
     background-color: rgba(240, 239, 244, 0.54);
 }
+.active{
+    background-color: rgba(240, 239, 244, 0.54)!important;
+}
+/*hr*/
 hr {
     height: 4px;
     border-radius: 50px;
