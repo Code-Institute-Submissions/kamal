@@ -91,7 +91,18 @@ body {
 .td-item {
     text-align: left;
     line-height: 50px;
+    font-size: 15px;
+}
+.date{
     font-size: 10px;
+}
+
+.place{
+    text-align: right;
+}
+.venue{
+    text-align: center;
+    
 }
 
 /*Images*/
