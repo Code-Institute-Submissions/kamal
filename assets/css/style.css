@@ -246,6 +246,10 @@ body {
     color: #A10702;
     font-size: 25px;
 }
+.navbar-default .navbar-nav>li>a:hover {
+    color: #A10702;
+
+}
 
 
 
@@ -272,7 +276,7 @@ a.active {
     background-color: rgba(240, 239, 244, 0.54);
 }
 
-a.active:hover {
+.navbar-default .navbar-nav>li>a.active:hover  {
     background-color: rgba(240, 239, 244, 0.54);
 }
 
